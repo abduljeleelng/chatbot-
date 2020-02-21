@@ -7,8 +7,8 @@ const expressValidator = require('express-validator');
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
 const cors = require('cors');
-
-
+//import routes
+const userRouter = require('./routes/users');
 
 app.use(cors());
 app.use(morgan("dev"));
