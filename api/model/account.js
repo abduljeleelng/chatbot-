@@ -5,6 +5,10 @@ const sequelize = require("../config/db");
 const Model = Sequelize.Model;
 class Account extends Model {}
 Account.init({
+  userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+   },
   accountnumber: {
     type: Sequelize.STRING,
     allowNull: false
