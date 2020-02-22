@@ -1,7 +1,7 @@
 {
   "name": "chatbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chatbot for account",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
