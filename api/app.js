@@ -10,6 +10,7 @@ const cors = require('cors');
 //import routes
 const userRouter = require('./routes/users');
 const accountRouter = require('./routes/account');
+const transactionRouter = require('./routes/transaction');
 
 app.use(cors());
 app.use(morgan("dev"));
@@ -26,6 +27,7 @@ app.get("/api",(req,res)=>{
 
 app.use('/api/', userRouter);
 app.use('/api/', accountRouter);
+app.use('/api/', transactionRouter);
 
 
 
