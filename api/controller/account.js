@@ -14,7 +14,7 @@ exports.create = (req, res) =>{
     res.json(account.toJSON());
     })
 };
-exports.deleteUser = (req,res)=>{
+exports.deleteAccount = (req,res)=>{
     Account.destroy({
         where: {
             id: req.body.id
@@ -25,7 +25,7 @@ exports.deleteUser = (req,res)=>{
         res.json({"message":"deleted"})
     });
 };
-exports.updateUser = (req,res)=>{
+exports.updateAccount = (req,res)=>{
         Account.update(req.body, {
     where: {
         id: req.body.id
