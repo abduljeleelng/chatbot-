@@ -29,8 +29,6 @@ app.use('/api/', userRouter);
 app.use('/api/', accountRouter);
 app.use('/api/', transactionRouter);
 
-
-
 app.use(function (err, req, res, next) {
     if (err.name === 'UnauthorizedError') {
         res.status(401).json({error:'invalid token...'});
