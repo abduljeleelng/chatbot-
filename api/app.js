@@ -29,8 +29,6 @@ app.use('/api/', userRouter);
 app.use('/api/', accountRouter);
 app.use('/api/', transactionRouter);
 
-
-
 app.use(function (err, req, res, next) {
     if (err.name === 'UnauthorizedError') {
         res.status(401).json({error:'invalid token...'});
@@ -38,5 +36,5 @@ app.use(function (err, req, res, next) {
     next()
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 500;
 app.listen(port, ()=>{console.log(`app listening to port ${port}`)});
