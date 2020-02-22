@@ -9,6 +9,7 @@ const fs = require('fs');
 const cors = require('cors');
 //import routes
 const userRouter = require('./routes/users');
+const accountRouter = require('./routes/acount');
 
 app.use(cors());
 app.use(morgan("dev"));
@@ -24,6 +25,7 @@ app.get("/api",(req,res)=>{
 
 
 app.use('/api/', userRouter);
+app.use('/api/', accountRouter);
 
 
 
