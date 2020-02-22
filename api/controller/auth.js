@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-const Sequelize = require('sequelize');
 const expressJwt = require('express-jwt');
 const User = require('../model/users');
 const bcrypt = require('bcrypt');
