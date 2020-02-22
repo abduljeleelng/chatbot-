@@ -9,7 +9,7 @@ Account.init({
         type: Sequelize.INTEGER,
         allowNull: false
    },
-  accountnumber: {
+  accountNumber: {
     type: Sequelize.STRING,
     allowNull: false
   },

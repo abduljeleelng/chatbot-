@@ -3,19 +3,19 @@ const app = express();
 const morgan = require('morgan');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
-const expressValidator = require('express-validator');
+//const expressValidator = require('express-validator');
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
 const cors = require('cors');
 //import routes
 const userRouter = require('./routes/users');
-const accountRouter = require('./routes/acount');
+const accountRouter = require('./routes/account');
 
 app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(expressValidator());
+//app.use(expressValidator());
 app.get("/api",(req,res)=>{
     fs.readFile("docs/apiDocs.json",(error,data)=>{
         if(error){return res.status(400).json({error:error})}
