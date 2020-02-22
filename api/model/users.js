@@ -99,36 +99,3 @@ User.methods ={
 */
 module.exports = User;
 
-
-
-/**
-const Sequelize = require("sequelize");
-const sequelize = new Sequelize("chatbot","root","",{
-    host:"localhost",
-    dialect :"mysql",
-    pool:{
-        max:5,
-        min:0,
-        idle:10000
-    },
-    //SQLite only 
-    //storage :"path/to/database.sqlite"
-});
-//or you can cal the connection uri
-//const sequelize = new Sequelize("postgress://user:.....")
-const User = sequelize.define("user",{
-    name:{
-        type:Sequelize.STRING,
-
-    },
-    phone:{
-        type:Sequelize.STRING,
-
-    },
-    email:{
-        type:Sequelize.STRING
-    }
-},{
-    freezeTableName: true //Model TableName("user")
-});
-*/
