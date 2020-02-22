@@ -16,6 +16,9 @@ User.init({
   email:{
       type:Sequelize.STRING
   },
+  password:{
+    type:Sequelize.STRING
+  },
   sex:{
       type:Sequelize.STRING
   },
